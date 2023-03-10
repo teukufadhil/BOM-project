@@ -1,0 +1,133 @@
+html,body, .section-1 {
+    height:100%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.feather {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #101010;
+}
+
+.section-1 .grid{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sidebar{
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 30px 60px 30px 30px;
+    position: relative;
+    width: 25%;
+}
+
+.content{
+    background-color: whitesmoke;
+    height: 100%;
+    border-left: 2px solid gray;
+    width: 75%;
+}
+
+.sidebar .nav-header{
+    padding: 4px 0 4px 0;
+    border-bottom: 1px solid rgb(190, 189, 189);
+    margin-bottom: 1.5rem;
+}
+
+.sidebar .item{
+    margin-left: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(190, 189, 189);
+}
+
+.sidebar .item a{
+    text-decoration: none;
+    color: #101010;
+}
+
+.sidebar .item .widget:hover{
+    opacity: 0.5;
+}
+
+.sidebar .item .clicked{
+    opacity: 0.5;
+}
+
+.sidebar .list-item{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+.sidebar .list-item .row{
+    margin-top: 2px;
+}
+
+
+.content .wrapper{
+    padding: 30px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content auto;
+    grid-template-columns: 100%;
+}
+
+.content .wrapper h1{
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.grid .close{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(25% - 1.5rem);
+    top: 50%;
+    background-color: white;
+    z-index: 10;
+}
+
+.grid .close button{
+    width: 3rem;
+height: 3rem;
+border-radius: 50%;
+background-color: transparent;
+border: none;
+}
+
+.grid .close-click{
+    left: calc(10% - 1.5rem) !important;
+}
+
+.grid .content-full{
+    width: 90% !important;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.grid .wrapper-hide{
+    display: none;
+}
+
+.grid .sidebar-small{
+    width: 10%;
+    padding: 30px 15px !important;
+}
